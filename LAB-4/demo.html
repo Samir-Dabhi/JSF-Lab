@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input type="button" value="click" onclick="startCounter()"/>
+    
+	<input type="button" value="click" onclick="stopCounter()"/>
+	<script>
+		function changeBG() {
+			r=Math.ceil(Math.random()*255);
+			g=Math.ceil(Math.random()*255);
+			b=Math.ceil(Math.random()*255);
+			document.body.style.backgroundColor="rgb("+r+","+g+","+b+")";
+		}
+
+		function startCounter(){
+			c1=setInterval(changeBG,10);
+		}
+        function stopCounter(){
+			c2=clearInterval(c1);
+		}
+
+	</script>	
+</body>
+</html>[]

@@ -1,0 +1,23 @@
+<!-- // 18.	WAP for following effect: If the mouse is over heading, change font color to “red” 
+// and if the mouse goes out of the heading change it to “black”.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading" onmouseenter="changeBGRed()" onmouseleave="changeBGBlack()">Hello, World!</h1>
+    <script>
+        heading = document.getElementById("heading");
+        function changeBGRed() {
+            heading.style.color = "red";
+        }
+        function changeBGBlack(){
+            heading.style.color = "black";
+        }
+    </script>
+</body>
+</html>

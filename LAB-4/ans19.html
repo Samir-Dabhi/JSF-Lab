@@ -1,0 +1,40 @@
+<!-- 19.	Write a javascript that handles following mouse events.  Add necessary elements
+javaScript gives the key code for the key pressed. If the key pressed is 
+"a","e","I","o","u" the script should announce that vowel is pressed. 
+If the keypressed is alphabet (apart from aeiou) then alphabet is pressed. 
+If the keypressed is in between 0-9 then number is pressed and in any other 
+case display a message special symbol is pressed. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <input id="d1" onkeypress="keyEvent(event)"/>
+    <H1 id="heading1"></H1>
+    <script>
+        heading1=document.getElementById("heading1");
+        function keyEvent(event) {
+            if (/[aeiouAEIOU]/.test(event.key)) {
+                heading1.innerHTML = "vowel is pressed";
+            }
+            else if(/[0-9]/.test(event.key)){
+                heading1.innerHTML = "Number is pressed";
+            }
+            else if(/[a-zA-Z]/.test(event.key)){
+                heading1.innerHTML = "alphabet is pressed";
+            }
+            else{
+                heading1.innerHTML = "Special symbol is pressed";
+            }
+            console.log(event);
+        }
+    </script>
+</body>
+</html>

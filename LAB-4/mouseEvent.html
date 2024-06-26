@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event Recognizer</title>
+</head>
+<body>
+    <div id="eventDisplay">Move your mouse or click anywhere!</div>
+
+    <script>
+        const eventDisplay = document.getElementById('eventDisplay');
+
+        function displayEvent(event) {
+            console.log(event)
+            eventDisplay.textContent = `Event: ${event.type}`;
+        }
+
+        document.addEventListener('click', displayEvent);
+        document.addEventListener('dblclick', displayEvent);
+        document.addEventListener('mousedown', displayEvent);
+        document.addEventListener('mouseup', displayEvent);
+        document.addEventListener('mouseover', displayEvent);
+        document.addEventListener('mouseout', displayEvent);
+        document.addEventListener('mousemove', displayEvent);
+        document.addEventListener('contextmenu', displayEvent);
+    </script>
+</body>
+</html>
