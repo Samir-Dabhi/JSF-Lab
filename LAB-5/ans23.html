@@ -1,0 +1,32 @@
+<!-- 23.	Demonstrate the difference between let and var. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function varScopeExample() {
+            if (true) {
+                var x = 20;
+                var x = 10;
+            }
+            console.log(x); // 10, because var is function-scoped
+        }
+
+        function letScopeExample() {
+            if (true) {
+                let y = 10;
+                 let y = 20; // this will give error 
+            }
+            console.log(y); // Error, because let is block-scoped
+        }
+
+        varScopeExample();
+        letScopeExample();
+
+    </script>
+</body>
+</html>

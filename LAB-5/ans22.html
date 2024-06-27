@@ -1,0 +1,25 @@
+<!-- 22.	WAP to demonstrate the concept of class in javascript. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Car{
+            constructor(cName,fuleType){
+                this.cName=cName;
+                this.fuleType=fuleType;
+            }
+            start() {
+                console.log("engine started");
+            }
+        }
+        let GTR = new Car("Nissan","Petrol")
+        GTR.start();
+        console.log(typeof GTR);
+    </script>
+</body>
+</html>
