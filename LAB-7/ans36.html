@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //some  
+        var arr = [1,3,5,6,8]
+        var bool = arr.some(
+            (ele)=>{
+                if (ele>7) {
+                    return true;
+                }
+            }
+        );
+        console.log(bool);
+
+        //every
+        var bool = arr.every(
+            (ele)=>{
+                if (ele>5) {
+                    return true;
+                }
+            }
+        );
+        console.log(bool);
+
+        //filter
+        var bool = arr.filter(
+            (ele)=>{
+                if (ele>7) {
+                    return true;
+                }
+            }
+        );
+        console.log(bool);
+
+        //foreach
+        var result = arr.forEach((value,index)=>{
+            console.log("value = "+value+"index = ",index);
+        })
+
+        //reduce 
+        var result = arr.reduce((total,temp)=>{
+            return total+temp;
+        })
+        console.log("result ",result);
+
+        //map 
+        var result = arr.map((ele)=>{
+            return ele*ele;
+        })
+        console.log(result);
+    </script>
+</body>
+</html>

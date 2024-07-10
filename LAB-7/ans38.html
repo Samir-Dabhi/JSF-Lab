@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Initialize a static array
+        let students = [
+            { id: 1, name: "Alice", age: 20 },
+            { id: 2, name: "Bob", age: 22 },
+            { id: 3, name: "Charlie", age: 23 }
+        ];
+
+        // Display the initial array
+        console.log("Initial array:", students);
+
+        // Insert operation: Add a new student to the array
+        let newStudent = { id: 4, name: "David", age: 24 };
+        students.push(newStudent);
+        console.log("Array after inserting new student:", students);
+
+        // Update operation: Update the age of a student
+        let studentToUpdate = students.find(student => student.id === 2);
+        if (studentToUpdate) {
+            studentToUpdate.age = 23;
+        }
+        console.log("Array after updating student's age:", students);
+
+        // Delete operation: Remove a student from the array
+        let studentIdToDelete = 3;
+        students = students.filter(student => student.id !== studentIdToDelete);
+        console.log("Array after deleting a student:", students);
+
+    </script>
+</body>
+</html>

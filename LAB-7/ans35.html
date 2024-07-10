@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Initialize an array
+        let numbers = [10, 20, 30, 40, 50];
+
+        // includes() 
+        let hasTwenty = numbers.includes(20);
+        let hasSixty = numbers.includes(60);
+        console.log("Array includes 20:", hasTwenty);
+        console.log("Array includes 60:", hasSixty);
+
+        // find() 
+        let GtThirty = numbers.find(num => num > 30);
+        let GtFifty = numbers.find(num => num > 50);
+        console.log("First number greater than 30:", GtThirty);
+        console.log("First number greater than 50:", GtFifty);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Initialize an array
+        let words = ["Hello", "world", "this", "is", "JavaScript"];
+
+        // Display the initial array
+        console.log("Initial array:", words);
+
+        // join() to create a string from the array elements
+        let sentence = words.join(" ");
+        console.log("After join(' '):", sentence);
+
+        // split() to create an array from a string
+        let sentence2 = "JavaScript is awesome";
+        let words2 = sentence2.split(" ");
+        console.log("After split(' '):", words2);
+
+        // Another example of split() 
+        let txt = "one,two,three,four";
+        let txtArray = txt.split(",");
+        console.log("After split(','):", txtArray);
+
+    </script>
+</body>
+</html>
